@@ -9,10 +9,13 @@ const indexRoutes = require('./routes/index')
 const app = next({ dev })
 const handle = app.getRequestHandler(indexRoutes)
 
-
 app.prepare().then(() => {
-    const server = express()
-  
+    const server = express()    
+    server.get('/frank',(req,res)=>{
+        res.send('bgu')
+    })
+    const apiRoutes = require('./routes/api')
+    server.use(apiRoutes)
     server.all('*', (req, res) => {
       return handle(req, res)
     })

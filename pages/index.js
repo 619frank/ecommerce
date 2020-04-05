@@ -4,7 +4,7 @@ export default function Index() {
     <React.Fragment>
         <Layout>
         <div>
-        <p>Hello Next.js</p>
+        <p>Hello Next</p>
         </div>
         </Layout>
     </React.Fragment>
