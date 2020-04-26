@@ -1,4 +1,1 @@
-to start the server  
-```
-nodemon --watch server server/app.js    
-```
+Here we have the Express js logics
